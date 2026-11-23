@@ -53,7 +53,7 @@ const fadeUp = {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const reduceMotion = useReducedMotion();
-  const reveal = reduceMotion ? {} : { initial: "hidden", whileInView: "visible", viewport: { once: true, amount: 0.18 } };
+  const reveal = reduceMotion ? {} : { variants: fadeUp, initial: "hidden", whileInView: "visible", viewport: { once: true, amount: 0.18 } };
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -187,7 +187,7 @@ export default function Home() {
         <div className="section-kicker"><span>05 — VAMOS CONVERSAR</span><Asterisk size={18} /></div>
         <div className="contact-layout">
           <div><span className="contact-pretitle">SEU PRÓXIMO CAPÍTULO COMEÇA AQUI.</span><h2>Tem uma ideia?<br /><em>Vamos dar forma.</em></h2><p>Conte um pouco sobre o que você está imaginando. A gente ajuda a transformar isso em um projeto possível.</p></div>
-          <a className="contact-card" href="https://wa.me/5571999999999?text=Ol%C3%A1%2C%20conheci%20a%20NotaNFC%2B%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer">
+          <a className="contact-card" href="https://wa.me/5571991345624?text=Ol%C3%A1%2C%20conheci%20a%20NotaNFC%2B%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer">
             <span>INICIE UMA CONVERSA</span><strong>Vamos criar<br />algo relevante.</strong><div className="contact-card-bottom"><span>FALAR PELO WHATSAPP</span><ArrowUpRight /></div>
           </a>
         </div>

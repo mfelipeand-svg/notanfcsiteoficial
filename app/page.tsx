@@ -126,20 +126,20 @@ export default function Home() {
       </section>
 
       <section className="work-section dark-section" id="projetos">
-        <div className="section-kicker light"><span>02 — SELEÇÃO DE PROJETOS</span><Asterisk size={18} /></div>
+        <div className="section-kicker light"><span>02 — PROJETOS & CONCEITOS</span><Asterisk size={18} /></div>
         <div className="work-heading">
           <h2>Feito para<br /><em>ser lembrado.</em></h2>
-          <p>Ideias diferentes pedem soluções únicas. Explore uma seleção de experiências digitais desenvolvidas com intenção e personalidade.</p>
+          <p>Ideias diferentes pedem soluções únicas. Conheça projetos e conceitos que mostram nossa direção criativa e capacidade de execução.</p>
         </div>
         <div className="projects-list">
           {projects.map((project, index) => (
             <motion.article className="project-card" key={project.number} initial={reduceMotion ? false : { opacity: 0, y: 45 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .12 }} transition={{ duration: .65, delay: index * .08 }}>
               <div className={`project-visual ${project.className}`}>
-                <div className="project-topline"><span>NOTANFC+ / SELECTED WORK</span><span>{project.number} — 03</span></div>
-                <div className="project-image-wrap"><img src={project.image} alt={`Referência visual do projeto ${project.name}`} loading="lazy" /></div>
+                <div className="project-topline"><span>NOTANFC+ / PROJECT STUDY</span><span>{project.number} — 03</span></div>
+                <div className="project-image-wrap"><img src={project.image} alt={`Imagem ilustrativa — ${project.type}`} loading="lazy" /></div>
                 <div className="project-overlay">
                   <span>EXPERIÊNCIA DIGITAL</span><strong>{project.name}</strong>
-                  <div className="project-window"><div className="window-bar"><i /><i /><i /><span>{project.name.toLowerCase().replaceAll(" ", "")}.com.br</span></div><div className="window-content"><b>{index === 0 ? "Sabor que aproxima." : index === 1 ? "Cuidado em cada detalhe." : "Sua próxima descoberta."}</b><small>DESIGN · ESTRATÉGIA · DIGITAL</small></div></div>
+                  <div className="project-window"><div className="window-bar"><i /><i /><i /><span>PROJECT PREVIEW</span></div><div className="window-content"><b>{index === 0 ? "Sabor que aproxima." : index === 1 ? "Cuidado em cada detalhe." : "Sua próxima descoberta."}</b><small>DESIGN · ESTRATÉGIA · DIGITAL</small></div></div>
                 </div>
                 <span className="project-asterisk">✳</span>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
             </motion.article>
           ))}
         </div>
-        <div className="work-note"><span>PROJETOS SELECIONADOS</span><span>DESIGN COM PROPÓSITO. RESULTADO COM DIREÇÃO.</span></div>
+        <div className="work-note"><span>PROJETOS & CONCEITOS</span><span>DESIGN COM PROPÓSITO. RESULTADO COM DIREÇÃO.</span></div>
       </section>
 
       <section className="services-section light-section" id="servicos">

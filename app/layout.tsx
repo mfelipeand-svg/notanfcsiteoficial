@@ -4,7 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NotaNFC+ Studio — Experiências digitais que movem negócios",
   description: "Criamos sites, landing pages, catálogos digitais e experiências web estratégicas para marcas que querem crescer.",
-  metadataBase: new URL("https://notanfc.com.br"),
   openGraph: {
     title: "NotaNFC+ Studio",
     description: "Estratégia, design e tecnologia para marcas que querem ir além.",
